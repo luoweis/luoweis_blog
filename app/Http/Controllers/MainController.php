@@ -66,7 +66,7 @@ class MainController extends Controller
     {
         //
         $article = Articles::findOrFail($id);
-        return view('main.show',compact('article'));
+        return view('main.read',compact('article'));
     }
 
     /**
